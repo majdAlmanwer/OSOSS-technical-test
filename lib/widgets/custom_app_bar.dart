@@ -19,7 +19,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         padding: const EdgeInsets.all(8.0),
         child: backArrowWidget,
       ),
-      leadingWidth: getPercentScreenWidth(5),
+      leadingWidth: backArrowWidget == null
+          ? getPercentScreenWidth(1)
+          : getPercentScreenWidth(8),
       title: Text(
         title,
         style: const TextStyle(fontWeight: FontWeight.normal),

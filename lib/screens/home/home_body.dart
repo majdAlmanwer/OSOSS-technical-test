@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:ososs_test/routes/routes.dart';
 import 'package:ososs_test/screens/home/widget/custom_text_form_field.dart';
 import 'package:ososs_test/utils/app_color.dart';
 import 'package:ososs_test/utils/app_config.dart';
@@ -72,7 +73,11 @@ class _HomeBodyState extends State<HomeBody> {
           ),
         ),
         CustomTextButton(
-            onTap: () {}, title: 'Go to page 1', color: indigoBlue),
+            onTap: () {
+              Get.toNamed(AppRoutes.pageone);
+            },
+            title: 'Go to page 1',
+            color: indigoBlue),
         SizedBox(
           height: getPercentScreenHeight(2),
         ),
