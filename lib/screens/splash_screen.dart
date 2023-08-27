@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
   startTime() async {
     var duration = const Duration(seconds: 3);
 
-    return Timer(duration, (() => Get.offNamed(AppRoutes.homepage)));
+    return Timer(duration, (() => Get.offAllNamed(AppRoutes.homepage)));
   }
 
   @override
