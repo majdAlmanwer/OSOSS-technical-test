@@ -4,7 +4,12 @@
 ososs-technical-test.
 
 ## Description
-
 -this application create by flutter version 3.10.6.
--fetch list of pokemon and display it.
--Animations page,by clicking the shape the big widget will change to mapthe clicked widget.
+-Splash screen contains Flutter logo in the middle, which stays for 3 seconds.
+-HOME screen, which contains,Text widget, with a value changed based on the TextField input changed and save the value at loacl storage.
+-fetch list of pokemon from Api and display it as List View.
+-The Animations page contains a large container that changes its shapes and color when taking action.
+# Install
+Download/Clone repo
+Install libraries and dependencies flutter pub get
+Run main.dart
