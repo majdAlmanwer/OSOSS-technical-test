@@ -81,7 +81,12 @@ class _HomeBodyState extends State<HomeBody> {
         SizedBox(
           height: getPercentScreenHeight(2),
         ),
-        CustomTextButton(onTap: () {}, title: 'Go to page 2', color: blueColor)
+        CustomTextButton(
+                onTap: () {
+                  Get.toNamed(AppRoutes.pagetwo);
+                },
+                title: 'Go to page 2',
+                color: blueColor)
             .paddingOnly(bottom: getPercentScreenHeight(3)),
       ]),
     );
